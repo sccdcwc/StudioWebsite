@@ -1,0 +1,97 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+ body.bgimage{
+	 background-color:#F7F7F7;
+	 }
+ h1{
+	font-family: "幼圆";
+	font-size: 36px;
+	color:#F00;
+	paddint:10px;
+	 }
+  
+ table.tb1{
+	background-image:url(%E5%A5%BD%E4%BA%BA%E7%9A%84%E7%94%9F%E5%91%BD.jpg);
+	background-position:bottom;
+	background-repeat:no-repeat;
+	
+	 }
+ 
+ td.td1{
+	 font-family:"幼圆";
+	 font-size:18px;
+	 font-weight:bold;
+	 color:#960;
+	 margin:0;
+	 }
+ td.td2{
+	 font-family:"幼圆";
+	 font-size:20px;
+	 color:#F63;
+	 line-height:20px;
+	 margin:0;
+	 }
+ div.d1{
+	 text-align:center;
+	 }
+ a:link,a:visited{ 
+	color:#F30;
+	display:block;
+	font-size:16px;
+	font-family:"幼圆";
+	width:120px;
+	text-align:center;
+	padding:4px;
+	text-decoration:underline;
+	}
+ a:hover,a:active{ 
+	color:#96F;
+	display:block;
+	text-decoration:underline;
+	background-color:#0CF;
+	}              
+ 			
+
+</style>
+<title>登录页面</title>
+</head>
+
+<body class="bgimage" >
+<table  align="center" style="margin:0" >
+<tr>
+<td width="500" height="235" valign="top" class="td1"><img src="时光的方向.jpg" width="100%" height="100%"/></td>
+<td valign="bottom" class="td1"><table style="margin:0;" class="tb1" align="center"  width="380" height="235">
+      <tr>
+        <td  valign="bottom" ><table class="tb1" align="center"  width="380" height="230">
+          <tr>
+            <td width="82" height="53" valign="bottom" class="td1" >用户名:</td>
+            <td width="206" valign="bottom"><input name="username" type="text" id="username" placeholder="请输入用户名/邮箱" value="" maxlength="80" height="30"></td>
+            <td width="46" class="td1"  valign="bottom" >*</td>
+          </tr>
+          <tr>
+            <td height="66" class="td1" valign="bottom"  >密码:</td>
+            <td  valign="bottom" ><input name="password" type="password" id="password" placeholder="请输入您的密码" maxlength="50" height="30"></td>
+            <td class="td1"  valign="bottom"  >*</td>
+          </tr>
+          <tr>
+            <td height="65" class="td1"  valign="bottom"  >验证码：</td>
+            <td  valign="bottom" ><input name="code" type="text" id="code" placeholder="请输入验证码" maxlength="4" height="30"><img src="yanzheng.asp"/>*<input type="hidden" ，name="c_yan" value="<%=lyp%>" /></td>
+          </tr>
+          <tr>
+            <td height="34" colspan="2" align="right" valign="bottom" ><input id="logon" name="logon" type="submit" value="登录" width="30"></td>
+          </tr>
+        </table>
+        
+</tr>
+</table>
+  <div align="right"><font color="#FF3333">若未注册，请注册<br/><a href="http://www.baidu.com" title="开始注册" >进入注册页>>></a></font>
+  </div>
+ <div align="left"><a href="http://www.baidu.com" title="主页" >返回主页>>></a></h1>
+ </div>
+  
+        
+</body>
+</html>

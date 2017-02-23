@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Register</title>
+<style type="text/css">
+body{
+	background-color: #333;
+	text-align: left;
+	}
+td.style1{
+	background-image:url(image/rose%20half%201.jpg);
+	background-repeat:no-repeat;
+	margin:10px;
+	}
+td.style2{
+	font-family:"Bradley Hand ITC";
+	font-size:56px;
+	color:#CCC;
+	font-weight:bolder;
+	margin:20px;
+	}
+td.style3{
+	background-image:url(image/rose%20half.jpg);
+	background-repeat:no-repeat;
+	margin:10px;
+	}
+form.fstyle1{
+	font-family:"Bradley Hand ITC";
+	font-size:20px;
+	color: #EFEFEF;
+	margin:0;
+	}
+</style>
+</head>
+
+<body>
+<div align="center">
+  <table width="100%" height="100%" >
+  <tr height="70">
+  	<td class="style2" align="left" valign="top" colspan="2">Register</td>
+    <td align="center" valign="middle" ><a href="index.html" title="Go back to entry"><img src="image/prev_arrow_white.gif"  width="32" height="32" /></a></td>
+  </tr>
+  <tr>
+    <td class="style1" width="450" height="550" align="left" valign="top"></td>
+    <td width="600" height="550" align="left" valign="top"><form class="fstyle1" action="" method="get">
+     <p> <label for="username">UserName:</label>
+      	<input id="username" name="username" type="text"  placeholder="decide your username" max="100"/>
+     <font color="#FFF"> * </font>(no more than 100 words)</p>
+      <p><label for="truename">TrueName:</label>
+      	<input id="truename" name="truename" type="text" placeholder="Fill in your truename" maxlength="100"/>
+      <font color="#FFF"> * </font></p>
+      <p><label for="password">Password:&nbsp;</label>
+      	<input id="password" name="password1" placeholder="Fill in your password" type="password" maxlength="30"/> <font color="#FFF"> * </font> (no more than 30 words)</p>
+      <p><label for="confirm">Confirm:&nbsp;&nbsp;&nbsp;</label>
+      	<input id="confirm" name="password2" placeholder="Confirm your password" type="password" maxlength="30"/><font color="#FFF"> * </font> (Input the same password)</p>
+      <p><label for="email">E-Mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      	<input id="email" name="email" placeholder="Fill in your avaiable e-mail" type="email" /><font color="#FFF"> * </font></p>
+      <!--<p><label for="avatar">Avatar:</label>
+      	<input id="avatar" title="choose a photo as your avatar" type="image"/></p> 如何上传保存头像-->
+      <p><label for="introductions">Introduction:</label><br/>
+      	<textarea id="introduction" rows="6" cols="40"></textarea></p>
+      <p><label for="gender">Gender:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      	&nbsp;Male<input id="male" name="gender1" type="radio" />
+        &nbsp;&nbsp;&nbsp;Female<input id="female" name="gender2" type="radio"/></p>
+      <p><label for="member">Are you the member of us?&nbsp;&nbsp;<font color="#FFF">*</font>&nbsp;&nbsp;</label>
+      	<select id="member" name="member" title="Select the answer">
+        	<option>&nbsp;&nbsp;yes&nbsp;&nbsp;</option>
+            <option>&nbsp;&nbsp;no&nbsp;&nbsp;&nbsp;</option><!--怎么如果选yes弹出输入密令，来区分是否为成员-->
+        </select></p>
+       <p align="left"><label for="register"></label>
+       	<input id="register" name="register" type="submit" value="Register"></p>
+     </form></td>
+     <td class="style3" width="230" ></td>
+  </tr>
+  </table>
+</div>
+</body>
+</html>
